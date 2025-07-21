@@ -1,13 +1,14 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: 1000px;
 }
 .home {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
 }
+
 .navbar {
   width: fixed(100%);
   height: 159px;
@@ -15,6 +16,8 @@ body {
   flex-direction: row;
   width: 100%;
   gap: 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .topbar {
   width: 100%;
@@ -36,8 +39,8 @@ body {
   width: hug(200px);
   height: 40px;
   border-radius: 8px;
-  border: 1px solid #ecac00;
-  color: #ecac00;
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
   padding: 10px;
   gap: 10px;
   transition: all 0.8s;
@@ -45,16 +48,16 @@ body {
 }
 .ferdi-musderi p {
   height: 18px;
-  width: 117px;
-  font-family: mulish;
-  font-weight: 500px;
+  width: 127px;
+  font-family: mulish, sans-serif;
+  font-weight: 700;
   font-style: medium;
   font-size: 16px;
   line-height: 100%;
   margin-top: 2px;
 }
 .ferdi-musderi:hover {
-  background-color: #ecac00;
+  background-color: var(--maincolor);
   color: #ffffff;
   cursor: pointer;
   transform: scale(1.05);
@@ -77,8 +80,8 @@ body {
 .comporativ-musteri p {
   width: 167px;
   height: 18px;
-  font-family: mulish;
-  font-weight: 500px;
+  font-family: mulish, sans-serif;
+  font-weight: 600;
   font-style: medium;
   font-size: 16px;
   line-height: 100%;
@@ -137,14 +140,14 @@ body {
   height: hug(86px);
   display: flex;
   padding: 6px 108px;
-  gap: 305px;
-  box-shadow: #1f1f1f19 0px 0px 4px;
+  gap: 260px;
+  /* box-shadow: #1f1f1f19 0px 0px 4px; */
 }
 .navbar-sec-2 {
   width: hug(925px);
   height: hug(36px);
   display: flex;
-  gap: 75px;
+  gap: 65px;
   align-items: center;
 }
 .search {
@@ -152,6 +155,9 @@ body {
   align-items: center;
   width: 200px;
   height: 36px;
+}
+.search input {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .d-flex {
   width: 100%;
@@ -180,6 +186,17 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  transition: all 0.5s;
+}
+.navbar-content ul li a p {
+  margin: 0;
+  transition: all 0.5s;
+}
+.navbar-content ul li:hover,
+.navbar-content ul li a:hover,
+.navbar-content ul li a p:hover {
+  color: var(--maincolor);
+  transform: scale(1.02);
 }
 .book-call {
   width: hug(136px);
@@ -187,7 +204,7 @@ body {
   border-radius: 16px;
   padding: 10px 10px;
   gap: 10px;
-  background-color: #ffcc4d;
+  background-color: var(--secondarycolor);
   color: white;
   display: flex;
   justify-content: center;
@@ -208,7 +225,75 @@ body {
 }
 .book-call:hover {
   background-color: #000000;
-  color: #ecac00;
-  border: 3px solid #ecac00;
+  color: var(--maincolor);
+  border: 3px solid var(--maincolor);
   transform: scale(1.05);
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+main > p {
+  height: 136px;
+  padding-top: 193px;
+  padding-left: 108px;
+}
+main > p,
+main > p > span {
+  font-size: 58px;
+  font-weight: 700;
+  font-family: Mulish;
+  font-style: bold;
+  line-height: 100%;
+  cursor: pointer;
+}
+main > p > span {
+  color: var(--maincolor);
+}
+
+.locations {
+  height: hug(46px);
+
+  padding-top: 160px;
+  display: flex;
+  justify-content: space-evenly;
+  left: 108px;
+  gap: 28px;
+}
+.locations > div {
+  width: 160px;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #f4f4f4;
+  background-color: #ededed;
+
+  display: flex;
+  padding: 10px;
+  text-align: end;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 5px 5px,
+    rgba(0, 0, 0, 0.07) 0px 10px 10px;
+  transition: all 1s;
+}
+.locations > div:hover {
+  transform: scale(1.05);
+  background-color: #e2e2e2;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.locations > div img {
+  width: 35px;
+  height: 24px;
+  border-radius: 5px;
+}
+.locations > div p {
+  font-size: 16px;
+  font-family: Mulish;
+  font-weight: 600;
+  font-style: SemiBold;
+  line-height: 100%;
+  margin: 0px;
 }
