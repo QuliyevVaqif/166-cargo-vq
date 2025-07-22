@@ -245,6 +245,7 @@ body {
   background-color: #ffcb47;
   transform: scale(0.999);
   color: white;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 main {
   width: 100%;
