@@ -220,6 +220,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 1s;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .book-call p {
@@ -238,6 +239,12 @@ body {
   color: var(--maincolor);
   border: 3px solid var(--maincolor);
   transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.book-call:active {
+  background-color: #ffcb47;
+  transform: scale(0.999);
+  color: white;
 }
 main {
   width: 100%;
