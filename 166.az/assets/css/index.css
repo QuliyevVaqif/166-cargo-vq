@@ -151,7 +151,7 @@ body {
   width: hug(925px);
   height: hug(36px);
   display: flex;
-  gap: 65px;
+  gap: 55px;
   align-items: center;
 }
 .search {
@@ -159,6 +159,12 @@ body {
   align-items: center;
   width: 200px;
   height: 36px;
+}
+.search form label {
+  margin-left: 14px;
+}
+.search form input {
+  padding-left: 60px;
 }
 .search input {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
