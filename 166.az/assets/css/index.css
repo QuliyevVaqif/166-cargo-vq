@@ -138,6 +138,7 @@ body {
   color: #000000;
   border: none;
 }
+
 .navbar-down {
   width: 100%;
   height: 90px;
@@ -261,7 +262,7 @@ main > p > span {
   padding-top: 160px;
   display: flex;
   justify-content: space-evenly;
-  left: 108px;
+
   gap: 28px;
 }
 .locations > div {
