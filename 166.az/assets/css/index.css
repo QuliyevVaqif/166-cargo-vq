@@ -11,7 +11,7 @@ body {
 
 .navbar {
   width: fixed(100%);
-  height: 159px;
+  height: 169px;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -117,7 +117,9 @@ body {
 .credit-cart img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
+
 .online-odenis p {
   width: hug(150px);
   height: 18px;
@@ -130,6 +132,7 @@ body {
   cursor: pointer;
   margin-bottom: 0px;
 }
+
 .btn.btn-secondary.dropdown-toggle {
   background-color: white;
   color: #000000;
@@ -137,7 +140,7 @@ body {
 }
 .navbar-down {
   width: 100%;
-  height: hug(86px);
+  height: 90px;
   display: flex;
   padding: 6px 108px;
   gap: 260px;
@@ -240,12 +243,13 @@ main > p {
 }
 main > p,
 main > p > span {
-  font-size: 58px;
+  font-size: 57px;
   font-weight: 700;
   font-family: Mulish;
   font-style: bold;
   line-height: 100%;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 main > p > span {
   color: var(--maincolor);
@@ -266,8 +270,9 @@ main > p > span {
   border-radius: 8px;
   border: 1px solid #f4f4f4;
   background-color: #ededed;
-
+  margin-left: 10px;
   display: flex;
+  gap: 10px;
   padding: 10px;
   text-align: end;
   justify-content: space-evenly;
