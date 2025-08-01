@@ -236,7 +236,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -643,6 +643,11 @@ main > p > span {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container-box1 > div:hover {
+  transform: scale(1.01);
 }
 
 .box-right {
@@ -660,6 +665,7 @@ main > p > span {
 }
 .container-scroll img {
   height: 100%;
+  cursor: pointer;
 }
 .container-box1 div div img {
   width: 44px;
