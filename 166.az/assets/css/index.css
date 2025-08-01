@@ -140,6 +140,10 @@ body {
   color: #000000;
   border: none;
 }
+.dropdown-toggle {
+  font-family: Mulish;
+  font-weight: 600;
+}
 .dropdown-menu {
   min-width: min-content;
   padding: 10px 5px;
@@ -161,7 +165,7 @@ body {
   width: hug(925px);
   height: hug(36px);
   display: flex;
-  gap: 55px;
+  gap: 75px;
   align-items: center;
 }
 .search {
@@ -188,7 +192,7 @@ body {
   display: flex;
   width: hug(630px);
   height: hug(36px);
-  gap: 50px;
+  gap: 60px;
 }
 .navbar-content {
   width: hug(444px);
@@ -384,12 +388,12 @@ main > p > span {
   line-height: 26px;
   letter-spacing: 0%;
   cursor: pointer;
-  transition: all 0.8s;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   color: #000000;
 }
 .haqqimizda-navbar div div a:hover {
-  transform: scale(1.02);
-  color: rgba(42, 41, 41, 0.693);
+  transform: scale(1.04);
+  color: black;
 }
 .haqqimizda-navbar .haqqimizda {
   color: var(--secondarycolor);
@@ -488,7 +492,9 @@ main > p > span {
   padding-bottom: 10px;
   padding-left: 8px;
   border-bottom: 1px solid #343434;
+  cursor: pointer;
 }
+
 .line p:not(:last-child) {
   font-family: Mulish;
   font-weight: 600;
@@ -553,12 +559,13 @@ main > p > span {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.6s;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
 }
 .box:hover {
   transform: scale(1.03);
   border-radius: 16px;
+  border: 2px solid #cfcfcf;
 }
 .text-and-icon {
   width: 170px;
