@@ -1,7 +1,6 @@
 html,
 body {
   width: 100%;
-  height: 4000px;
 }
 .home {
   width: 100%;
@@ -219,9 +218,8 @@ body {
   margin: 0;
   transition: all 0.5s;
 }
-.navbar-content ul li:hover,
-.navbar-content ul li a:hover,
-.navbar-content ul li a p:hover {
+.navbar-content > ul > li > a:hover,
+.navbar-content > ul > li > a p:hover {
   color: var(--maincolor);
   transform: scale(1.02);
 }
@@ -349,7 +347,7 @@ main > p > span {
   line-height: 100%;
   letter-spacing: 0%;
   cursor: pointer;
-  transition: all 0.8s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .breadcrumb-item a:hover,
@@ -395,9 +393,14 @@ main > p > span {
   transform: scale(1.04);
   color: black;
 }
+.haqqimizda-navbar div div a:active {
+  color: var(--maincolor);
+}
 .haqqimizda-navbar .haqqimizda {
-  color: var(--secondarycolor);
   border-bottom: 1px solid var(--secondarycolor);
+}
+.haqqimizda-navbar .haqqimizda > a {
+  color: var(--secondarycolor);
 }
 .section1 {
   padding-top: 115px;
@@ -629,7 +632,6 @@ main > p > span {
 .container-box1 {
   width: 1200px;
   height: 100%;
-
   padding: 0;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -697,4 +699,297 @@ main > p > span {
   line-height: 26px;
   color: #4c4c4c;
   letter-spacing: 2px;
+}
+.section4 {
+  padding-top: 120px;
+}
+.my-carousel {
+  margin-top: 38px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--maincolor);
+}
+.carousel-indicators {
+  margin-bottom: 0px;
+}
+.carousel-inner {
+  width: 70%;
+  padding: 30px;
+  /* display: flex;
+  justify-content: space-evenly; */
+}
+.carousel-item {
+  width: 100%;
+  border-radius: 25px;
+  align-self: center;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: all 0.5s;
+}
+.carousel-item:hover {
+  transform: scale(1.03);
+}
+.item-img-text {
+  display: flex;
+  width: 100%;
+  padding: 30px 0px;
+}
+.carousel-item div img:first-child {
+  width: 80%;
+  height: 300px;
+  object-fit: contain;
+}
+.carousel-item div img:last-child {
+  width: 40%;
+}
+.carousel-item > div > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.name-and-text {
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 30px;
+}
+.item-name {
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 100%;
+  color: var(--maincolor);
+  padding-right: 20px;
+}
+.item-text {
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  color: #989898;
+}
+footer {
+  width: 100%;
+  height: 414px;
+  background-color: var(--secondarycolor);
+  margin-top: 120px;
+}
+.footer-top {
+  border-bottom: 2px solid #f2c13c;
+  height: 80%;
+  display: flex;
+  padding-top: 30px;
+}
+.footer-top > div {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer-top h2 {
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+.footer-top > div p {
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Light;
+  font-size: 16px;
+  line-height: 140%;
+  color: #785801;
+  cursor: pointer;
+}
+.footer-top > div p:hover {
+  color: #4c4c4c;
+}
+.footer-top > div > div {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer-top > div > div a {
+  font-family: Mulish;
+  font-weight: 600;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+}
+.footer-top > div > div a:hover {
+  color: #4c4c4c;
+}
+.arrow {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.social {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.social img {
+  width: 36px;
+  height: 36px;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.footer-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+.footer-down p {
+  font-family: Mulish;
+  font-weight: 500;
+  font-size: 16px;
+  color: #b38304;
+  cursor: pointer;
+  transition: all cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.footer-down p:hover {
+  color: #4c4c4c;
+  transform: scale(1.03);
+  animation: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.footer-down span {
+  text-decoration: underline;
+  font-family: Mulish;
+  font-weight: 500;
+  font-size: 16 px;
+  color: #b38304;
+  cursor: pointer;
+}
+
+.team,
+.media {
+  padding-top: 100px;
+}
+.container-team,
+.new-card {
+  padding-top: 40px;
+}
+.container-team > div {
+  padding: 20px 20px;
+}
+.container-team > div > div {
+  width: 100%;
+  border: none;
+  padding: 0px;
+}
+.container-team > div > div:hover {
+  transform: scale(1.03);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+.container-team > div > div .card-img-top {
+  width: 100%;
+  height: 430px;
+  border: 2px solid #e3e3e3;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.card-body {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-text-1 {
+  font-family: Mulish;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 150%;
+}
+.card-text-2 {
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.new-card > div {
+  padding: 20px 20px;
+}
+.new-card > div > div {
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.new-card > div > div:hover {
+  transform: scale(1.02);
+}
+.new-card > div > div:active {
+  transform: scale(0.98);
+}
+.new-card > div > div img {
+  width: 100%;
+  height: 187px;
+  border-radius: 20px 20px 0 0;
+}
+.new-card .card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.media-text-1 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  color: #bfbfbf;
+}
+.media-text-2 {
+  font-family: Mulish;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  width: 100%;
+}
+.media-text-3 {
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  color: #989898;
+}
+.page-item a {
+  color: var(--maincolor);
+}
+.page-item a:hover {
+  cursor: pointer;
+  color: var(--secondarycolor);
+}
+.page-item.active a {
+  background-color: var(--maincolor);
+  border-color: var(--secondarycolor);
+}
+.section-banner-img {
+  padding-top: 100px;
+}
+.section-banner-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
 }
