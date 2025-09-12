@@ -167,6 +167,15 @@ body {
   gap: 75px;
   align-items: center;
 }
+.dropdown-2 {
+  display: none;
+}
+.dropdown-2 button img {
+  width: 60px;
+}
+.dropdown-2 .dropdown-toggle::after {
+  display: none;
+}
 .search {
   display: flex;
   align-items: center;
@@ -271,9 +280,9 @@ main > p {
   padding-top: 193px;
   padding-left: 108px;
 }
-main > p,
-main > p > span {
-  font-size: 57px;
+main > div > p,
+main > div > p > span {
+  font-size: 55px;
   font-weight: 700;
   font-family: Mulish;
   font-style: bold;
@@ -281,17 +290,16 @@ main > p > span {
   cursor: pointer;
   letter-spacing: 1px;
 }
-main > p > span {
+main > div > p > span {
   color: var(--maincolor);
 }
 
 .locations {
   height: hug(46px);
-
-  padding-top: 160px;
+  width: 100%;
+  padding-top: 60px;
   display: flex;
-  justify-content: space-evenly;
-
+  justify-content: start;
   gap: 28px;
 }
 .locations > div {
@@ -300,7 +308,6 @@ main > p > span {
   border-radius: 8px;
   border: 1px solid #f4f4f4;
   background-color: #ededed;
-  margin-left: 10px;
   display: flex;
   gap: 10px;
   padding: 10px;
@@ -318,7 +325,10 @@ main > p > span {
   cursor: pointer;
   border-radius: 16px;
 }
-
+.locations > div:active {
+  transform: scale(0.98);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
 .locations > div img {
   width: 35px;
   height: 24px;
@@ -389,18 +399,27 @@ main > p > span {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   color: #000000;
 }
-.haqqimizda-navbar div div a:hover {
+.haqqimizda-navbar div div a:hover,
+.haqqimizda-arrow p:hover {
   transform: scale(1.04);
   color: black;
 }
-.haqqimizda-navbar div div a:active {
+.haqqimizda-navbar div div a:active,
+.haqqimizda-arrow p:active {
   color: var(--maincolor);
+  transform: scale(0.99);
 }
 .haqqimizda-navbar .haqqimizda {
   border-bottom: 1px solid var(--secondarycolor);
 }
 .haqqimizda-navbar .haqqimizda > a {
   color: var(--secondarycolor);
+}
+.haqqimizda-arrow p {
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
 }
 .section1 {
   padding-top: 115px;
@@ -515,7 +534,6 @@ main > p > span {
 }
 .section2-text {
   padding-left: 44px;
-  width: 715px;
 }
 .but-missia {
   width: 351px;
@@ -554,7 +572,7 @@ main > p > span {
   padding-top: 28px;
 }
 .box {
-  width: 316px;
+  width: 45%;
   height: 200px;
   border-radius: 12px;
   border-width: 1px;
@@ -569,6 +587,9 @@ main > p > span {
   transform: scale(1.03);
   border-radius: 16px;
   border: 2px solid #cfcfcf;
+}
+.box:active {
+  transform: scale(0.99);
 }
 .text-and-icon {
   width: 170px;
@@ -613,7 +634,7 @@ main > p > span {
   text-align: center;
 }
 .but-work {
-  width: 351px;
+  width: 500px;
   height: 48px;
   padding-top: 120px;
   display: flex;
@@ -716,8 +737,6 @@ main > p > span {
 .carousel-inner {
   width: 70%;
   padding: 30px;
-  /* display: flex;
-  justify-content: space-evenly; */
 }
 .carousel-item {
   width: 100%;
