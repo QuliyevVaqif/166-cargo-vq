@@ -39,10 +39,6 @@ ul.faqKateqoriyalar li {
   border-bottom: 1px solid #f4f4f4;
 }
 
-ul.faqKateqoriyalar li:first-child {
-  border-bottom: 1px solid #b28306;
-}
-
 ul.faqKateqoriyalar li button {
   display: flex;
   align-items: center;
@@ -52,10 +48,6 @@ ul.faqKateqoriyalar li button {
   color: #111827;
   border: none;
   background-color: white;
-}
-
-ul.faqKateqoriyalar li:first-child button {
-  color: #b28306;
 }
 
 .kateqoriyalarContainer {
@@ -90,8 +82,18 @@ ul.faqList li div.faqTitle {
   content: "+";
   color: red;
   font: 600 30px var(--mainFont);
+  transition: all 0.2s;
 }
 
 .faqTitle.open p::after {
-  content: "x";
+  transform: rotate(45deg);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  font: 600 35px var(--mainFont);
+}
+ul.faqKateqoriyalar li.changeBorder {
+  border-bottom: 1px solid #b28306;
+}
+
+ul.faqKateqoriyalar li button.change-color {
+  color: #b28306;
 }

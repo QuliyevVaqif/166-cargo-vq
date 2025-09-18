@@ -115,7 +115,6 @@ body {
 }
 .section-home-3 {
   padding-top: 120px;
-  padding-bottom: 120px;
 }
 .home-3-text {
   display: flex;
@@ -187,4 +186,147 @@ body {
   line-height: 100%;
   text-align: center;
   color: #98999a;
+}
+.section-home-4 {
+  padding-top: 120px;
+}
+.sponsored {
+  display: flex;
+  gap: 20px;
+}
+.sponsored > div {
+  width: calc(100% / 6);
+  height: 90px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sponsored > div:hover {
+  transform: scale(1.02);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.sponsored > div:active {
+  transform: scale(0.98);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.section-home-5 {
+  padding-top: 120px;
+}
+.section-head {
+  font-family: Mulish;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 48px;
+  line-height: 100%;
+  padding-bottom: 50px;
+}
+.company-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company-links > div {
+  width: calc(100% / 3 - 20px);
+  height: 160px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0 20px 30px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.company-links > div:hover {
+  transform: scale(1.01);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  border: 2px solid rgb(180, 180, 180);
+}
+.company-links > div:active {
+  transform: scale(0.99);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.company-links > div > div:first-child {
+  display: flex;
+  align-items: start;
+}
+.links-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.links-text p:first-child {
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+}
+.links-text p:last-child {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+}
+.company-links > div > div:last-child {
+  display: flex;
+  align-items: center;
+}
+.company-links > div > div:last-child img {
+  width: 60px;
+  height: 100%;
+}
+.section-home-6 {
+  padding-top: 120px;
+}
+.avtopark-slide {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+.avtopark-slide > div {
+  width: calc(100% / 4);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.avtopark-slide > div:hover {
+  transform: scale(1.03);
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.avtopark-slide > div:active {
+  transform: scale(0.99);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+.avtopark-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.avtopark-text p:first-child {
+  font-family: Mulish;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+}
+.avtopark-text p:last-child {
+  font-family: Mulish;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #98999a;
+}
+.section-home-7 {
+  padding-top: 120px;
+}
+.banner-img img {
+  width: 100%;
+  height: 310px;
+  cursor: x;
 }

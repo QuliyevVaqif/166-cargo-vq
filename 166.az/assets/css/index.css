@@ -28,6 +28,7 @@ body {
   padding: 14px 108px 20px 108px;
   box-shadow: #6969691f 0px 0px 4px;
 }
+
 .musteri-option {
   width: hug(357px);
   height: 40px;
@@ -40,8 +41,7 @@ body {
   width: hug(200px);
   height: 40px;
   border-radius: 8px;
-  border: 1px solid var(--maincolor);
-  color: var(--maincolor);
+
   padding: 10px;
   gap: 10px;
   transition: all 0.8s;
@@ -57,7 +57,7 @@ body {
   line-height: 100%;
   margin-top: 2px;
 }
-.ferdi-musderi:hover {
+.musteri-color:hover {
   background-color: var(--maincolor);
   color: #ffffff;
   cursor: pointer;
@@ -88,11 +88,17 @@ body {
   line-height: 100%;
   margin-top: 2px;
 }
-.comporativ-musteri:hover {
-  background-color: rgba(220, 220, 220, 0.511);
+
+.musteri-color {
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
+}
+.musteri-color:hover {
+  background-color: var(--maincolor);
+  color: #ffffff;
   cursor: pointer;
-  transform: scale(1.03);
-  z-index: 2;
+  transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 .top-bar-sec {
   width: hug(226px);
@@ -317,13 +323,13 @@ main > div > p > span {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 5px 5px,
     rgba(0, 0, 0, 0.07) 0px 10px 10px;
-  transition: all 1s;
 }
 .locations > div:hover {
   transform: scale(1.05);
   background-color: #e2e2e2;
   cursor: pointer;
   border-radius: 16px;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .locations > div:active {
   transform: scale(0.98);
