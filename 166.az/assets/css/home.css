@@ -328,5 +328,5 @@ body {
 .banner-img img {
   width: 100%;
   height: 310px;
-  cursor: x;
+  cursor: pointer;
 }
