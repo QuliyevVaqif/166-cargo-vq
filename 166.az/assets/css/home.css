@@ -290,6 +290,10 @@ body {
   width: calc(100% / 4);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .avtopark-slide > div:hover {
   transform: scale(1.03);
@@ -304,6 +308,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding-top: 30px;
 }
 .avtopark-text p:first-child {
   font-family: Mulish;
@@ -329,4 +334,64 @@ body {
   width: 100%;
   height: 310px;
   cursor: pointer;
+}
+.section-home-8 {
+  padding-top: 120px;
+}
+.home-8-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-8-header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-8-header > div h2 {
+  font-family: Mulish;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 48px;
+  line-height: 100%;
+}
+.home-8-header > div h3 {
+  font-family: Mulish;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 100%;
+  color: #5e5e5e;
+}
+.home-8-header > div h4 {
+  font-family: Mulish;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2d2d2d;
+}
+.section-home-10 {
+  padding-top: 120px;
+}
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.map img {
+  object-fit: contain;
+  cursor: pointer;
+}
+.map img:hover {
+  transform: scale(1.03);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.map img:active {
+  transform: scale(0.98);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.section-home-11 {
+  margin-top: 120px;
 }
