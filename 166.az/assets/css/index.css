@@ -906,19 +906,39 @@ footer {
 }
 .container-team > div {
   padding: 20px 20px;
+  width: calc(100% / 3);
 }
 .container-team > div > div {
   width: 100%;
   border: none;
   padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 .container-team > div > div:hover {
   transform: scale(1.03);
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
 }
+.container-team > div > div img {
+  object-fit: contain;
+  padding-top: 20px;
+}
+.container-team > div > div img.chosed {
+  background-image: url("../image/bg1.png");
+  background-repeat: no-repeat;
+}
+.container-team > div:nth-child(3n + 1) img {
+  background-position: right;
+}
+.container-team > div:nth-child(3n + 2) img.chosed {
+  background-position: center;
+  background-repeat: repeat-x;
+}
+.container-team > div:nth-child(3n) img {
+  background-position: left;
+}
 .container-team > div > div .card-img-top {
-  width: 100%;
   height: 430px;
   border: 2px solid #e3e3e3;
   border-radius: 20px;

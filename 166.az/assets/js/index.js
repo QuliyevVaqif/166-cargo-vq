@@ -42,3 +42,17 @@ document.querySelectorAll(".musteri-option div").forEach((btn) => {
     });
   });
 });
+
+document.querySelectorAll(".container-team > div > div img").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.classList.add("chosed");
+
+    document
+      .querySelectorAll(".container-team > div > div img")
+      .forEach((check) => {
+        if (btn !== check) {
+          check.classList.remove("chosed");
+        }
+      });
+  });
+});
